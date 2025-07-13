@@ -1,7 +1,5 @@
 import pandas as pd
-import os
-root = os.path.join(os.getcwd(), 'DATA', '表單', '潮玩市場調查_csv.csv')
-df = pd.read_csv(root)
+df = pd.read_csv('潮玩市場調查_csv.csv')
 df = df.rename(columns={
     '請問您是否有聽說過潮流玩具?': '聽說過潮玩嗎?',
     '選擇潮牌玩具注重因素': '注重因素',
@@ -56,6 +54,20 @@ budget_mapping = {
     '超過3000元': 3500 # 取一個代表值
 }
 df['購買預算_數值'] = df['購買預算'].map(budget_mapping)
+
+df.insert(0, '受訪者編號', range(1, len(df) + 1))
+
+
+df_reason = df[['受訪者編號', '購買原因']].dropna()
+df_reason['購買原因'] = df_reason['購買原因'].str.split(',')
+df_reason = df_reason.explode('購買原因')
+df_reason.to_csv("潮玩_購買原因_關聯表.csv", index=False,encoding='utf-8-sig')
+
+brand_cols = ['POPMART', 'Disney', "Pok'emon"]
+df_brand = df[['受訪者編號'] + brand_cols]
+df_brand = df_brand.melt(id_vars='受訪者編號', var_name='品牌', value_name='填答')
+df_brand = df_brand[df_brand['填答'].notna()].drop(columns='填答')
+df_brand.to_csv("潮玩_品牌偏好_關聯表.csv", index=False)
 
 # 儲存清洗後的資料到新的 CSV 檔案
 df.to_csv('潮玩市場調查_清洗後.csv', index=False, encoding='utf-8-sig')
