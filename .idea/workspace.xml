@@ -140,6 +140,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="refresh data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Designer_Toy_Market_Data_Analysis$form.coverage" NAME="form Coverage Results" MODIFIED="1752222229421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data/表單" />
+    <SUITE FILE_PATH="coverage/Designer_Toy_Market_Data_Analysis$form.coverage" NAME="form Coverage Results" MODIFIED="1752471612750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Data/表單" />
   </component>
 </project>
