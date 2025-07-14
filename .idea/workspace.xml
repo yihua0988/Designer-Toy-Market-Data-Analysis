@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c29d738-e87d-40a9-bee4-00f278479d07" name="Changes" comment="refresh data">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Designer-Toy-Market-Data-Analysis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Designer-Toy-Market-Data-Analysis.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Data/表單/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data/表單/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/潮玩市場調查_清洗後.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +82,7 @@
       <workItem from="1752136270442" duration="1838000" />
       <workItem from="1752220722131" duration="1999000" />
       <workItem from="1752223007894" duration="129000" />
+      <workItem from="1752471288304" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="form 整理">
       <option name="closed" value="true" />
